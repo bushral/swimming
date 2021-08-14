@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+ 
+
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+  background-image: url(Images/bb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin: 0;
+  font-family: Arial;
+}
+
+
+.header {
+    font-size: larger;
+    color: #717D7E;
+    text-align: center;
+    padding: 32px;
+} 
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+.topnav {
+    text-align: right;
+	overflow: hidden;
+	background:#77b1f3;
+	
+  }
+	  
+  /* Style the topnav links */
+  .topnav a {
+	 float: right;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+  }
+	  
+  /* Change color on hover */
+  .topnav a:hover {
+	background-color: steelblue;
+	color: black;
+  }
+</style>
+<body>
+    <div class="topnav">
+        <a href="HomePage.html">בית</a>
+        <a href="AboutUs.html">מי אנחנו</a>
+        <a href="ads.html">פרסומות </a>
+        <a href="imagesPage.html">תמונות</a>
+        <a href="TypeSwimming.html">סוגי קורס שחייה</a>
+        <a href="aid.html">עזרה ראשונה</a>
+        <a href="Files.html">טפסים</a>
+        <a href="index.html">תקשורת</a>
+       </div>
+<!-- Header -->
+<div class="header">
+  <h1>קורס מתקדמים</h1>
+        
+ 
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <video width="500" height="500" controls>
+        <source src="advA1.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+   </video>
+
+    
+    
+  </div>
+  <div class="column">
+    <video width="500" height="500" controls>
+        <source src="advA2.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+   </video>
+    
+    
+    
+  </div>  
+  <div class="column">
+    <video width="500" height="500" controls>
+        <source src="advA3.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+   </video>
+
+    
+    
+  </div>
+</div>
+
+</body>
+</html>
