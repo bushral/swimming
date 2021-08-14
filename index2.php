@@ -59,7 +59,7 @@ if(isset($_POST["submit"]))
 	}
 	if($error == '')
 	{
-		require 'class/class.phpmailer.php';
+		require 'class.phpmailer.php';
 		$mail = new PHPMailer;
 		$mail->IsSMTP();								//Sets Mailer to send message using SMTP
 		$mail->Host = 'smtpout.secureserver.net';		//Sets the SMTP hosts of your Email hosting, this for Godaddy
@@ -70,7 +70,7 @@ if(isset($_POST["submit"]))
 		$mail->SMTPSecure = '';							//Sets connection prefix. Options are "", "ssl" or "tls"
 		$mail->From = $_POST["email"];					//Sets the From email address for the message
 		$mail->FromName = $_POST["name"];				//Sets the From name of the message
-		$mail->AddAddress('abc@xyz.com', 'Name');		//Adds a "To" address
+		$mail->AddAddress('alnbarybushra@gmail.com', 'Name');		//Adds a "To" address
 		$mail->AddCC($_POST["email"], $_POST["name"]);	//Adds a "Cc" address
 		$mail->WordWrap = 50;							//Sets word wrapping on the body of the message to a given number of characters
 		$mail->IsHTML(true);							//Sets message type to HTML				
